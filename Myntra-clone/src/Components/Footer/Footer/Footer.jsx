@@ -1,6 +1,8 @@
 import FooterSection from "../FooterSection/FooterSection";
 import styles from "./Footer.module.css";
 
+console.log("Mahith");
+
 function Footer() {
   const customerPolicies = ["Home", "Features", "Pricing", "FAQs", "About"];
 
