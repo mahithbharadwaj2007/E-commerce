@@ -1,0 +1,27 @@
+.cardContainer {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.productContainer {
+  margin-top: 15px;
+  padding: 0 12px;
+}
+
+/* ── Tablet: 2 columns ── */
+@media (max-width: 768px) {
+  .productContainer .row {
+    --bs-columns: 2 !important;
+  }
+}
+
+/* ── Mobile: 1 column ── */
+@media (max-width: 480px) {
+  .productContainer .row {
+    --bs-columns: 1 !important;
+  }
+
+  .cardContainer {
+    justify-content: center;
+  }
+}

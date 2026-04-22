@@ -1,0 +1,13 @@
+.a {
+  margin-right: 5px;
+  margin-left: 5px;
+  color: rgb(13, 13, 13);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.a:hover {
+  color: #ff3f6c;
+  text-underline-offset: 8px;
+  text-decoration: underline solid rgb(248, 4, 4);
+}

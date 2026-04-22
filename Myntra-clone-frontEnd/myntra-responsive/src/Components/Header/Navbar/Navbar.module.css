@@ -1,0 +1,171 @@
+* {
+  margin: 0;
+  font-family: Arial;
+  border: border-box;
+}
+
+.navbar {
+  height: 60px;
+  background-color: #f2f3f3;
+  color: rgb(13, 13, 13);
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  position: sticky;
+  top: 0px;
+  z-index: 1000;
+  padding: 0 10px;
+}
+
+.a {
+  margin-right: 5px;
+  margin-left: 5px;
+  color: rgb(13, 13, 13);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.a:hover {
+  color: #ff3f6c;
+  text-underline-offset: 8px;
+  text-decoration: underline solid rgb(248, 4, 4);
+}
+
+.nav_search {
+  display: flex;
+  flex-direction: row;
+  height: 40px;
+  width: 500px;
+}
+
+.search_input {
+  flex-grow: 1;
+  font-size: 14px;
+  border: none;
+  outline: none;
+  padding-left: 30px;
+  border-radius: 5px;
+}
+
+.search_icon {
+  background-color: rgb(255, 255, 255);
+  height: 40px;
+  width: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.3rem;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  color: #6d6d6d;
+  cursor: pointer;
+}
+
+.nav_logo {
+  background-image: url("src/images/Myntra-Logo.png");
+  background-size: cover;
+  height: 50px;
+  width: 80px;
+  background-position: center;
+  cursor: pointer;
+}
+
+.logo {
+  height: 50px;
+  width: 80px;
+}
+
+.cart_container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  color: rgb(7, 7, 7);
+  font-size: 15px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.cart_badge {
+  position: absolute;
+  top: -5px;
+  right: -10px;
+  background-color: red;
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 2px 6px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Hamburger button - hidden on desktop */
+.hamburger {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.6rem;
+  cursor: pointer;
+  color: rgb(13, 13, 13);
+}
+
+/* Mobile nav links drawer */
+.navDrawer {
+  display: none;
+}
+
+/* ── Tablet (≤768px) ── */
+@media (max-width: 768px) {
+  .navbar {
+    flex-wrap: wrap;
+    height: auto;
+    padding: 8px 12px;
+    gap: 8px;
+  }
+
+  .nav_search {
+    width: 100%;
+    order: 3;
+  }
+
+  .hamburger {
+    display: block;
+    order: 2;
+  }
+
+  /* Hide nav links inside navbar on mobile */
+  .navLinks {
+    display: none;
+  }
+
+  .navDrawer {
+    display: flex;
+    flex-direction: column;
+    background-color: #f2f3f3;
+    padding: 10px 16px;
+    gap: 12px;
+    border-top: 1px solid #ddd;
+  }
+
+  .navDrawer .a {
+    font-size: 15px;
+    padding: 4px 0;
+    border-bottom: 1px solid #e0e0e0;
+  }
+}
+
+/* ── Mobile (≤480px) ── */
+@media (max-width: 480px) {
+  .logo {
+    height: 36px;
+    width: 60px;
+  }
+
+  .search_input {
+    font-size: 13px;
+    padding-left: 12px;
+  }
+}

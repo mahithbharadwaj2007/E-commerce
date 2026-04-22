@@ -1,0 +1,11 @@
+.foot {
+  background-color: #f2f3f3;
+}
+
+/* ── Mobile: reduce footer padding ── */
+@media (max-width: 480px) {
+  .foot footer {
+    padding-top: 24px !important;
+    padding-bottom: 24px !important;
+  }
+}
